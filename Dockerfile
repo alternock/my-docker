@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 ENV debian_frontend=nointeractive
 
-RUN apt-get update && apt-get -y install nginx
+RUN apt-get update -y && apt-get -y install nginx
 
 COPY ./web /var/www/html
 
